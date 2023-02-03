@@ -33,6 +33,7 @@ spec:
                 cpu: "500m"
       {{ if .Values.spec.karpenterInstanceProfile }}
       nodeSelector: # <- add nodeselector, toleration and spread constraitns
+
         team: default
         type: karpenter
       tolerations:
